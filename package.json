@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "description": "VitePress 技术栈介绍与上手指南",
-  "keywords": ["vitepress", "vue", "docs"],
+  "keywords": [
+    "vitepress",
+    "vue",
+    "docs"
+  ],
   "author": "BUILDY",
   "license": "MIT",
   "homepage": "https://buildy0.github.io/vitepress-tour/",
@@ -20,9 +24,11 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
+    "docs:build:github-pages": "cross-env VP_BASE=/vitepress-tour/ vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
+    "cross-env": "^10.1.0",
     "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "^1.6.0",
     "vue": "^3.5.0"

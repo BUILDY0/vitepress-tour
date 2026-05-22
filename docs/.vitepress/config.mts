@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   lang: 'zh-CN',
-  base: '/vitepress-tour/',
+  base: process.env.VP_BASE || '/',
   title: 'VitePress Tour',
   description: 'VitePress 技术栈介绍与上手指南',
   markdown: {
